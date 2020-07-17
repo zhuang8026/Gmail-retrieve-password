@@ -38,8 +38,8 @@ app.post('/GmailRetrievePassword', (req, res)=>{
         // secure: true,
         auth: {
             // type: 'OAuth2',
-            user: 'zhuang8026@gmail.com',
-            pass: 'zj199126h',
+            user: 'zhuang8026@gmail.com', // 请使用自己的 gmail账号
+            pass: '*********',            // 请使用自己的 gmail密码
             // serviceClient: '896736742121-60o5vgegttum1r3oub83ubjlkvhkfbhj.apps.googleusercontent.com',
             // privateKey: 'XYYv27ZXhwKKp5piYdcQdpix',
         }
