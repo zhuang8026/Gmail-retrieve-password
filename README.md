@@ -18,6 +18,8 @@
 - 安裝      /   npm install
 - 啟動      /   npm start
 - 附号      /   http://localhost:3002
+- 使用      /   postman中到Body中，key填入 username，value填入 想要傳送的 email
+- 測試      /   postman中測試
 - [詳情請洽詢](https://treefonts.com/)
 
 ### 如何擁有? ###

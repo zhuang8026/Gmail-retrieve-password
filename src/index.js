@@ -29,7 +29,8 @@ app.post('/GmailRetrievePassword', (req, res)=>{
 
     let email = req.body.username;
     let randomNum = parseInt(Math.random()*1000000);
-    console.log(email)
+    console.log('32 email:', email)
+    console.log('33 req:', req.body)
 
     let transporter = nodemailer.createTransport({ // 宣告發信物件
         service: 'Gmail',
@@ -39,7 +40,7 @@ app.post('/GmailRetrievePassword', (req, res)=>{
         auth: {
             // type: 'OAuth2',
             user: 'zhuang8026@gmail.com', // 请使用自己的 gmail账号
-            pass: '*********',            // 请使用自己的 gmail密码
+            pass: 'zj199126h',            // 请使用自己的 gmail密码
             // serviceClient: '896736742121-60o5vgegttum1r3oub83ubjlkvhkfbhj.apps.googleusercontent.com',
             // privateKey: 'XYYv27ZXhwKKp5piYdcQdpix',
         }
@@ -88,5 +89,5 @@ app.post('/GmailRetrievePassword', (req, res)=>{
 
 // server 侦听
 app.listen(3002, ()=>{
-    console.log('server started - william use 3002')
+    console.log('server started - william use localhost:3002')
 })
